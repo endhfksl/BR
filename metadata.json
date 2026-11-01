@@ -1,0 +1,6 @@
+{
+  "name": "카이로스 연대기: 변방영주 가이드 (Chronicles of Kairos)",
+  "description": "제국력 345년 카이로스 제국과 대륙의 세계관, 기·마법 경지 체계, 인물 도감 및 인터랙티브 대륙 지도 안내서",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', 'Noto Serif KR', Georgia, serif;
+  }
+
+  .font-lore {
+    font-family: 'Noto Serif KR', 'Cinzel', serif;
+  }
+}
+
+/* Custom scrollbars with antique gold touch */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #78716c;
+}
+
+@keyframes quill-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+}
+
+.animate-quill-float {
+  animation: quill-float 3s ease-in-out infinite;
+}
+
+@keyframes seal-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(185, 28, 28, 0.4), 0 0 40px rgba(217, 119, 6, 0.2);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 35px rgba(220, 38, 38, 0.7), 0 0 60px rgba(245, 158, 11, 0.4);
+  }
+}
+
+.animate-seal-pulse {
+  animation: seal-pulse 2.2s ease-in-out infinite;
+}
